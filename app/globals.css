@@ -16,7 +16,7 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,10 +24,33 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+}
+
+@layer components {
+  .list {
+    @apply border bg-blue-500 text-white mt-3 p-3 rounded-lg hover:border-blue-400;
+  }
+
+  .heading {
+    @apply font-bold text-2xl mt-2;
+  }
+
+  .level {
+    @apply text-xl
+  }
+
+  .link {
+    @apply border text-white hover:bg-white px-3 rounded-3xl p-1 hover:text-black transition duration-300;
+  }
+
+  .description {
+    @apply mb-2
   }
 }
